@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class changeCameras : MonoBehaviour
+public class ChangeCameras : MonoBehaviour
 {
     public bool arOn = false;
 
@@ -40,7 +40,7 @@ public class changeCameras : MonoBehaviour
 
 
 
-    public void arToggle()
+    public void ArToggle()
     {
         digiCam.SetActive(!digiCam.activeSelf);
         arCam.SetActive(!arCam.activeSelf);
