@@ -10,6 +10,7 @@ public class ChangeCameras : MonoBehaviour
     private GameObject arCam;
     private GameObject digiCam;
     private Button arBut;
+    public GameObject arRayBut;
 
     public Color arOnColor;
     public Color arOffColor;
@@ -19,15 +20,18 @@ public class ChangeCameras : MonoBehaviour
     {
         arCam = GameObject.Find("ARCamera");
         digiCam = GameObject.Find("Main Camera");
+        arRayBut = GameObject.Find("RayButton");
         arBut = GameObject.Find("AR_On_Off_Button").GetComponent<Button>();
 
         if (arOn){
             digiCam.SetActive(false);
             arBut.GetComponent<Image>().color = arOnColor;
+            arRayBut.SetActive(true);
         }
         else{
             arCam.SetActive(false);
             arBut.GetComponent<Image>().color = arOffColor;
+            arRayBut.SetActive(false);
         }
     }
 
@@ -44,6 +48,7 @@ public class ChangeCameras : MonoBehaviour
     {
         digiCam.SetActive(!digiCam.activeSelf);
         arCam.SetActive(!arCam.activeSelf);
+        arRayBut.SetActive(!arRayBut.activeSelf);
 
         if(arBut.GetComponent<Image>().color == arOffColor)
             arBut.GetComponent<Image>().color = arOnColor;
