@@ -11,7 +11,8 @@ public class TouchManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cam = GameObject.Find("ARCamera").GetComponent<Camera>();
+        if (GameObject.Find("ARCamera") != null)
+            cam = GameObject.Find("ARCamera").GetComponent<Camera>();
     }
 
     // Update is called once per frame
