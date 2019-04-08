@@ -541,7 +541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!21 &182362570
 Material:
@@ -721,7 +721,7 @@ Transform:
   - {fileID: 1762621104}
   - {fileID: 534669905}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &396331393
 GameObject:
@@ -1364,7 +1364,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &660370141
 RectTransform:
@@ -1383,7 +1383,7 @@ RectTransform:
   - {fileID: 1927268085}
   - {fileID: 1760073010}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1514,7 +1514,7 @@ MonoBehaviour:
   mAspectRatio: 0.7506868
   mImageTargetType: 0
   mWidth: 200
-  mHeight: 146.625
+  mHeight: 150.13736
 --- !u!1 &730754420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,7 +1751,7 @@ Transform:
   - {fileID: 765319978}
   - {fileID: 660880394}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &836762392
 GameObject:
@@ -2564,7 +2564,7 @@ Transform:
   - {fileID: 223998067}
   - {fileID: 544591102}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1355707723
 GameObject:
