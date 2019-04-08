@@ -53,7 +53,7 @@ public class TouchManager : MonoBehaviour
             inventory.GetComponent<Inventory>().water += 1;
             inventoryTexts[0].text = "Water: " + inventory.GetComponent<Inventory>().water;
         }
-        else if (type == "seeds")
+        else if (type == "seed")
         {
             inventory.GetComponent<Inventory>().seeds += 1;
             inventoryTexts[1].text = "Seeds: " + inventory.GetComponent<Inventory>().seeds;
