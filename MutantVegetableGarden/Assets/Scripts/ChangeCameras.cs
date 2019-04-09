@@ -14,6 +14,7 @@ public class ChangeCameras : MonoBehaviour
     private Button arBut;
     private Button gardenBut;
     private Button mixingBut;
+    public GameObject mixingPanel;
 
     //public Color arOnColor;
     //public Color arOffColor;
@@ -28,6 +29,7 @@ public class ChangeCameras : MonoBehaviour
         arBut = GameObject.Find("ARButton").GetComponent<Button>();
         gardenBut = GameObject.Find("GardenButton").GetComponent<Button>();
         mixingBut = GameObject.Find("MixingButton").GetComponent<Button>();
+        //mixingPanel = GameObject.Find("MixingUI");
 
         if (arOn)
         {
@@ -39,6 +41,8 @@ public class ChangeCameras : MonoBehaviour
             arBut.interactable = false;
             gardenBut.interactable = true;
             mixingBut.interactable = true;
+            // Garden UI in next line;
+            mixingPanel.SetActive(false);
         }
         else
         {
@@ -51,6 +55,8 @@ public class ChangeCameras : MonoBehaviour
             arBut.interactable = true;
             gardenBut.interactable = false;
             mixingBut.interactable = true;
+            // Garden UI in next line;
+            mixingPanel.SetActive(false);
         }
     }
 
@@ -64,6 +70,7 @@ public class ChangeCameras : MonoBehaviour
         arBut.interactable = false;
         gardenBut.interactable = true;
         mixingBut.interactable = true;
+        mixingPanel.SetActive(false);
     }
 
     public void Garden_On()
@@ -75,6 +82,7 @@ public class ChangeCameras : MonoBehaviour
         arBut.interactable = true;
         gardenBut.interactable = false;
         mixingBut.interactable = true;
+        mixingPanel.SetActive(false);
     }
 
     public void Mixing_On()
@@ -86,5 +94,7 @@ public class ChangeCameras : MonoBehaviour
         arBut.interactable = true;
         gardenBut.interactable = true;
         mixingBut.interactable = false;
+        // Mixing UI in next line;
+        mixingPanel.SetActive(true);
     }
 }
