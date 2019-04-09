@@ -22,6 +22,9 @@ public class Shake : MonoBehaviour
     Vector3 lowPassValue;
 
     bool isShaking = false;
+    bool canMix = false;
+
+    public GameObject plant;
 
     void Start()
     {
@@ -46,13 +49,13 @@ public class Shake : MonoBehaviour
             isShaking = true;
             buffer = 0.4f;
         }
-        else if(buffer < 0)
+        else if (buffer < 0)
         {
             isShaking = false;
             buffer = 0.5f;
         }
 
-        if(buffer < 0.5f)
+        if (buffer < 0.5f)
             buffer -= Time.deltaTime;
 
         if (isShaking)
@@ -65,24 +68,27 @@ public class Shake : MonoBehaviour
             shakingPot.SetActive(false);
         }
 
-        // if (Input.GetKey(KeyCode.P))
-        // {
-        //     timer();
-        // } else if(timeLeft< 3f){
-        //     timeLeft = 3f;
-        //     shakingPot.SetActive(false);
-        // }
+        if (Input.GetKey(KeyCode.P))
+        {
+            timer();
+        }
+        else if (timeLeft < 3f)
+        {
+            timeLeft = 3f;
+            shakingPot.SetActive(false);
+        }
     }
 
     void timer()
     {
         shakingPot.SetActive(true);
         timeLeft -= Time.deltaTime;
-        print("isShaking");
-        if (timeLeft < 0)
+        if (timeLeft < 0 && canMix)
         {
-            print("isDoneShaking");
             nice.SetActive(true);
+            GameObject newPlant = Instantiate(plant, new Vector3(garden.transform.position.x, garden.transform.position.y, garden.transform.position.z), Quaternion.identity);
+            newPlant.transform.parent = garden.transform; 
+            canMix = false;
         }
     }
 }
