@@ -7,7 +7,7 @@ public class TouchManager : MonoBehaviour
 {
     private Camera cam;
     private int rOrB = 0;
-    private GameObject inventory;
+    private GameObject manager;
     public Text[] inventoryTexts;
 
 
@@ -17,7 +17,7 @@ public class TouchManager : MonoBehaviour
         if (GameObject.Find("ARCamera") != null)
             cam = GameObject.Find("ARCamera").GetComponent<Camera>();
 
-        inventory = GameObject.Find("GameManager");
+        manager = GameObject.Find("GameManager");
     }
 
     public void CastRay()
@@ -32,6 +32,9 @@ public class TouchManager : MonoBehaviour
         if (Physics.Raycast(mousePosN, mousePosF - mousePosN, out hit))
         {
             Pickup(hit.transform.gameObject.GetComponent<IngredientType>().type);
+            manager.GetComponent<ingredientCountdown>().StartCountdown(hit.transform.gameObject);
+
+            // Add countdown feedback for the ingredients
 
             if (rOrB == 0)
             {
@@ -50,18 +53,18 @@ public class TouchManager : MonoBehaviour
     {
         if (type == "water")
         {
-            inventory.GetComponent<Inventory>().water += 1;
-            inventoryTexts[0].text = "Water: " + inventory.GetComponent<Inventory>().water;
+            manager.GetComponent<Inventory>().water += 1;
+            inventoryTexts[0].text = "Water: " + manager.GetComponent<Inventory>().water;
         }
         else if (type == "seed")
         {
-            inventory.GetComponent<Inventory>().seeds += 1;
-            inventoryTexts[1].text = "Seeds: " + inventory.GetComponent<Inventory>().seeds;
+            manager.GetComponent<Inventory>().seeds += 1;
+            inventoryTexts[1].text = "Seeds: " + manager.GetComponent<Inventory>().seeds;
         }
         else if (type == "potato")
         {
-            inventory.GetComponent<Inventory>().potatoes += 1;
-            inventoryTexts[2].text = "Potatoes: " + inventory.GetComponent<Inventory>().potatoes;
+            manager.GetComponent<Inventory>().potatoes += 1;
+            inventoryTexts[2].text = "Potatoes: " + manager.GetComponent<Inventory>().potatoes;
         }
     }
 }
