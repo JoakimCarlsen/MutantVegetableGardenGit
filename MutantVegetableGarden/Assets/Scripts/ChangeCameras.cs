@@ -42,7 +42,7 @@ public class ChangeCameras : MonoBehaviour
             gardenBut.interactable = true;
             mixingBut.interactable = true;
             // Garden UI in next line;
-            mixingPanel.SetActive(false);
+            //mixingPanel.SetActive(false);
         }
         else
         {
@@ -56,7 +56,7 @@ public class ChangeCameras : MonoBehaviour
             gardenBut.interactable = false;
             mixingBut.interactable = true;
             // Garden UI in next line;
-            mixingPanel.SetActive(false);
+            //mixingPanel.SetActive(false);
         }
     }
 
@@ -70,7 +70,7 @@ public class ChangeCameras : MonoBehaviour
         arBut.interactable = false;
         gardenBut.interactable = true;
         mixingBut.interactable = true;
-        mixingPanel.SetActive(false);
+        //mixingPanel.SetActive(false);
     }
 
     public void Garden_On()
@@ -82,7 +82,7 @@ public class ChangeCameras : MonoBehaviour
         arBut.interactable = true;
         gardenBut.interactable = false;
         mixingBut.interactable = true;
-        mixingPanel.SetActive(false);
+        //mixingPanel.SetActive(false);
     }
 
     public void Mixing_On()
@@ -95,6 +95,6 @@ public class ChangeCameras : MonoBehaviour
         gardenBut.interactable = true;
         mixingBut.interactable = false;
         // Mixing UI in next line;
-        mixingPanel.SetActive(true);
+        //mixingPanel.SetActive(true);
     }
 }
