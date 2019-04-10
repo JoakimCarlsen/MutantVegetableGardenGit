@@ -3749,6 +3749,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3adff0b3a9e8324ebc07c52aec0052f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  potPanel: {fileID: 395846723}
+  itemDescription: 
+  MixingBenchGO: {fileID: 0}
 --- !u!114 &1196391671
 MonoBehaviour:
   m_ObjectHideFlags: 0

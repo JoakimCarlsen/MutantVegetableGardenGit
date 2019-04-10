@@ -5,6 +5,18 @@ using UnityEngine.EventSystems;
 
 public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
 {
+    public RectTransform potPanel;
+
+    public string itemDescription;
+
+    public GameObject MixingBenchGO;
+
+    void Start()
+    {
+        MixingBenchGO = GameObject.Find("MixingBench");
+    }
+
+
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition;
@@ -12,14 +24,16 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        transform.localPosition = Vector3.zero;
+
+        if (RectTransformUtility.RectangleContainsScreenPoint(potPanel, Input.mousePosition))
+        {
+            Debug.Log("Dropped item");
+            transform.localPosition = Vector3.zero;
+        }
+        else transform.localPosition = Vector3.zero;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()

@@ -9,6 +9,7 @@ public class ItemDrop : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
+        print("srdyd");
         RectTransform potPanel = transform as RectTransform;
         if (!RectTransformUtility.RectangleContainsScreenPoint(potPanel, Input.mousePosition))
         {
