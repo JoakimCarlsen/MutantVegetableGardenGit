@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -142,8 +142,9 @@ RectTransform:
   - {fileID: 2082794985}
   - {fileID: 395846723}
   - {fileID: 743619806}
+  - {fileID: 1866495466}
   m_Father: {fileID: 544591102}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1034,7 +1035,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 544591102}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2031,7 +2032,6 @@ RectTransform:
   - {fileID: 396331394}
   - {fileID: 730754421}
   - {fileID: 1868258070}
-  - {fileID: 1349788861}
   - {fileID: 186087581}
   - {fileID: 14380338}
   m_Father: {fileID: 1295185674}
@@ -3286,7 +3286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &998005291
 Transform:
   m_ObjectHideFlags: 0
@@ -3750,7 +3750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potPanel: {fileID: 395846723}
-  itemDescription: 
+  itemDescription: popSeed
   MixingBenchGO: {fileID: 0}
 --- !u!114 &1196391671
 MonoBehaviour:
@@ -4034,6 +4034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1295185674}
   - component: {fileID: 1295185675}
+  - component: {fileID: 1295185676}
   m_Layer: 0
   m_Name: MixingBench
   m_TagString: Untagged
@@ -4071,113 +4072,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeLeft: 3
   garden: {fileID: 336511299}
-  shakingPot: {fileID: 1349788860}
-  nice: {fileID: 186087578}
-  plant: {fileID: 0}
---- !u!1 &1349788860
-GameObject:
+  shakingPot: {fileID: 1866495465}
+  creatureCreate: {fileID: 1295185673}
+  canMix: 0
+--- !u!114 &1295185676
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1349788861}
-  - component: {fileID: 1349788862}
-  - component: {fileID: 1349788863}
-  m_Layer: 0
-  m_Name: ShakingPot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1349788861
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349788860}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.11}
-  m_LocalScale: {x: 180.14, y: 180.14, z: 180.14}
-  m_Children: []
-  m_Father: {fileID: 544591102}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -457, y: 87}
-  m_SizeDelta: {x: 1, y: 1}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!212 &1349788862
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349788860}
+  m_GameObject: {fileID: 1295185673}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 900c35d8ffde54bdaa6fe99d0ba90739, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 8.4, y: 5.52}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!95 &1349788863
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349788860}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 29bb6ff9e0d3043389343adcea3fd580, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cdd1dc2d94f549e0a42b5455a5d7eaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodies:
+  - {fileID: 21300000, guid: 0dad5555e12114d2a82d323f89a03006, type: 3}
+  - {fileID: 21300000, guid: 665796e6b99cf4142aa599ca131bf1f3, type: 3}
+  - {fileID: 21300000, guid: c694f69039fb74c5895bdb46f81c7012, type: 3}
+  leftArms:
+  - {fileID: 21300000, guid: e37d0e6b8d2e94716a0eceb394215214, type: 3}
+  - {fileID: 21300000, guid: 67d58a60c2b4a422c97ff609b0370e28, type: 3}
+  - {fileID: 21300000, guid: c03a9bd252a9a4287ae133ee72fb9131, type: 3}
+  rightArms:
+  - {fileID: 21300000, guid: eb4ff4ffee32d43f3807bf2b5c6a71d4, type: 3}
+  - {fileID: 21300000, guid: d32cfd725b9714658a44c8663b7b6a63, type: 3}
+  - {fileID: 21300000, guid: 109cc0a3435ff48b6bc4d5319bbf5d8b, type: 3}
+  leftLegs:
+  - {fileID: 21300000, guid: 2dc24b2a40c2d45a3a9e69c2aec10ec3, type: 3}
+  - {fileID: 21300000, guid: 9a937b14a8d35489b9d2550334235534, type: 3}
+  - {fileID: 21300000, guid: b978cd5c073bf4f01b7b5122dd11c00c, type: 3}
+  rightLegs:
+  - {fileID: 21300000, guid: 2a5d6f8e23d8f464b82aeb58ed6c21b5, type: 3}
+  - {fileID: 21300000, guid: f7fc2e5b857df4fc3a3cd0a299646dba, type: 3}
+  - {fileID: 21300000, guid: 406a394f0786c45d2a5bbcf099edf2fd, type: 3}
+  faces:
+  - {fileID: 21300000, guid: a6803b49336594f17b71d7ddaa452eae, type: 3}
+  - {fileID: 21300000, guid: 00c08d144ff81405d88ba3fcc37e7a10, type: 3}
+  - {fileID: 21300000, guid: 62b540caf27a044e3a6b243ba653317a, type: 3}
+  possibleIngredients:
+  - popSeed
+  - cactiSeed
+  - sunMulch
+  ObjInPot: []
+  plantSkeleton:
+  - {fileID: 473656168146168759, guid: c9b24fafc99564dbe9add83c64d67740, type: 3}
+  - {fileID: 473656168146168759, guid: 6c4fe18d606614e1e8ea791649af0066, type: 3}
+  - {fileID: 473656168146168759, guid: 99270e47b941a4099ac40fd4e7135c3f, type: 3}
+  garden: {fileID: 336511299}
 --- !u!1 &1355707723
 GameObject:
   m_ObjectHideFlags: 0
@@ -4527,6 +4470,7 @@ GameObject:
   - component: {fileID: 1512266014}
   - component: {fileID: 1512266013}
   - component: {fileID: 1512266012}
+  - component: {fileID: 1512266015}
   m_Layer: 0
   m_Name: IngredientImage
   m_TagString: Untagged
@@ -4632,6 +4576,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512266010}
   m_CullTransparentMesh: 0
+--- !u!114 &1512266015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512266010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3adff0b3a9e8324ebc07c52aec0052f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potPanel: {fileID: 395846723}
+  itemDescription: cactiSeed
+  MixingBenchGO: {fileID: 0}
 --- !u!21 &1523177227
 Material:
   serializedVersion: 6
@@ -4872,6 +4831,7 @@ GameObject:
   - component: {fileID: 1631703147}
   - component: {fileID: 1631703146}
   - component: {fileID: 1631703145}
+  - component: {fileID: 1631703148}
   m_Layer: 0
   m_Name: IngredientImage
   m_TagString: Untagged
@@ -4977,6 +4937,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631703143}
   m_CullTransparentMesh: 0
+--- !u!114 &1631703148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631703143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3adff0b3a9e8324ebc07c52aec0052f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potPanel: {fileID: 395846723}
+  itemDescription: sunMulch
+  MixingBenchGO: {fileID: 0}
 --- !u!1 &1650237565
 GameObject:
   m_ObjectHideFlags: 0
@@ -5520,6 +5495,100 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823281213}
+  m_CullTransparentMesh: 0
+--- !u!1 &1866495465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1866495466}
+  - component: {fileID: 1866495469}
+  - component: {fileID: 1866495468}
+  - component: {fileID: 1866495467}
+  m_Layer: 5
+  m_Name: ShakingPot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1866495466
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866495465}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 14380338}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -210, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1866495467
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866495465}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 361300c12b4944e848c87d75607b772d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1866495468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866495465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 900c35d8ffde54bdaa6fe99d0ba90739, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1866495469
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866495465}
   m_CullTransparentMesh: 0
 --- !u!1 &1868258069
 GameObject:

@@ -29,15 +29,8 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
         {
             Debug.Log("Dropped item");
             transform.localPosition = Vector3.zero;
+            MixingBenchGO.GetComponent<CreatureCreater>().AddToPot(itemDescription);
         }
         else transform.localPosition = Vector3.zero;
-    }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
