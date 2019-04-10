@@ -22,6 +22,7 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
+        // if statement for checking if there is more than 0 of the specific item, itemName is placeholder for the int in inventory: if(inventory.GetComponent<Inventory>().itemName > 0)
         transform.position = Input.mousePosition;
     }
 

@@ -51,38 +51,35 @@ public class TouchManager : MonoBehaviour
 
     void Pickup(string type)
     {
-        if (type == "water")
+        if (type == "type1")
         {
-            manager.GetComponent<Inventory>().water += 1;
-            inventoryTexts[0].text = "" + manager.GetComponent<Inventory>().water;
+            manager.GetComponent<Inventory>().item1 += 1;
+            inventoryTexts[0].text = "" + manager.GetComponent<Inventory>().item1;
         }
-        else if (type == "seed")
+        else if (type == "type2")
         {
-            manager.GetComponent<Inventory>().seeds += 1;
-            inventoryTexts[1].text = "" + manager.GetComponent<Inventory>().seeds;
+            manager.GetComponent<Inventory>().item2 += 1;
+            inventoryTexts[1].text = "" + manager.GetComponent<Inventory>().item2;
         }
-        else if (type == "potato")
+        else if (type == "type3")
         {
-            manager.GetComponent<Inventory>().potatoes += 1;
-            inventoryTexts[2].text = "" + manager.GetComponent<Inventory>().potatoes;
+            manager.GetComponent<Inventory>().item3 += 1;
+            inventoryTexts[2].text = "" + manager.GetComponent<Inventory>().item3;
         }
-        //Needs change
-        if (type == "water")
+        else if (type == "type4")
         {
-            manager.GetComponent<Inventory>().water += 1;
-            inventoryTexts[3].text = "" + manager.GetComponent<Inventory>().water;
+            manager.GetComponent<Inventory>().item4 += 1;
+            inventoryTexts[3].text = "" + manager.GetComponent<Inventory>().item4;
         }
-        //Needs change
-        else if (type == "seed")
+        else if (type == "type5")
         {
-            manager.GetComponent<Inventory>().seeds += 1;
-            inventoryTexts[4].text = "" + manager.GetComponent<Inventory>().seeds;
+            manager.GetComponent<Inventory>().item5 += 1;
+            inventoryTexts[4].text = "" + manager.GetComponent<Inventory>().item5;
         }
-        //Needs change
-        else if (type == "potato")
+        else if (type == "type6")
         {
-            manager.GetComponent<Inventory>().potatoes += 1;
-            inventoryTexts[5].text = "" + manager.GetComponent<Inventory>().potatoes;
+            manager.GetComponent<Inventory>().item6 += 1;
+            inventoryTexts[5].text = "" + manager.GetComponent<Inventory>().item6;
         }
     }
 }
