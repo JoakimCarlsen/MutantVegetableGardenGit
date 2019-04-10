@@ -54,17 +54,35 @@ public class TouchManager : MonoBehaviour
         if (type == "water")
         {
             manager.GetComponent<Inventory>().water += 1;
-            inventoryTexts[0].text = "Water: " + manager.GetComponent<Inventory>().water;
+            inventoryTexts[0].text = "" + manager.GetComponent<Inventory>().water;
         }
         else if (type == "seed")
         {
             manager.GetComponent<Inventory>().seeds += 1;
-            inventoryTexts[1].text = "Seeds: " + manager.GetComponent<Inventory>().seeds;
+            inventoryTexts[1].text = "" + manager.GetComponent<Inventory>().seeds;
         }
         else if (type == "potato")
         {
             manager.GetComponent<Inventory>().potatoes += 1;
-            inventoryTexts[2].text = "Potatoes: " + manager.GetComponent<Inventory>().potatoes;
+            inventoryTexts[2].text = "" + manager.GetComponent<Inventory>().potatoes;
+        }
+        //Needs change
+        if (type == "water")
+        {
+            manager.GetComponent<Inventory>().water += 1;
+            inventoryTexts[3].text = "" + manager.GetComponent<Inventory>().water;
+        }
+        //Needs change
+        else if (type == "seed")
+        {
+            manager.GetComponent<Inventory>().seeds += 1;
+            inventoryTexts[4].text = "" + manager.GetComponent<Inventory>().seeds;
+        }
+        //Needs change
+        else if (type == "potato")
+        {
+            manager.GetComponent<Inventory>().potatoes += 1;
+            inventoryTexts[5].text = "" + manager.GetComponent<Inventory>().potatoes;
         }
     }
 }

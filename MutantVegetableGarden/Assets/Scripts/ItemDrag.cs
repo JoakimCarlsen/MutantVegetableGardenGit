@@ -11,9 +11,12 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public GameObject MixingBenchGO;
 
+    private GameObject inventory;
+
     void Start()
     {
         MixingBenchGO = GameObject.Find("MixingBench");
+        inventory = GameObject.Find("GameManager");
     }
 
 
@@ -30,6 +33,7 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
             Debug.Log("Dropped item");
             transform.localPosition = Vector3.zero;
             MixingBenchGO.GetComponent<CreatureCreater>().AddToPot(itemDescription);
+            // subtract 1 from inventory.GetComponent<Inventory>().nameofthewvariableyouwanttoremovefrom
         }
         else transform.localPosition = Vector3.zero;
     }

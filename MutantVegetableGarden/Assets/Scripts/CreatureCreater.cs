@@ -36,6 +36,7 @@ public class CreatureCreater : MonoBehaviour
         {
             if (ObjInPot[0].Contains(possibleIngredients[i]))
             {
+                // if you find a way to randomise position of the spawn of creatures, change garden.transform.position.x (and .z), to what ever x and z position the random should use
                 GameObject newSkeleton = Instantiate(plantSkeleton[i], new Vector3(garden.transform.position.x, garden.transform.position.y + 5.66f, garden.transform.position.z), Quaternion.identity);
                 newSkeleton.transform.parent = garden.transform;
 
