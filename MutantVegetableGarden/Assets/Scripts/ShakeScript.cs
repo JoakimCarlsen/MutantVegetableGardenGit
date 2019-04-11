@@ -9,6 +9,7 @@ public class ShakeScript : MonoBehaviour
     public GameObject garden;
     public GameObject shakingPot;
     public GameObject creatureCreate;
+    public GameObject mixPrompt;
 
     float accelerometerUpdateInterval = 1.0f / 60.0f;
     // The greater the value of LowPassKernelWidthInSeconds, the slower the
@@ -67,6 +68,12 @@ public class ShakeScript : MonoBehaviour
         //     timeLeft = 3f;
         //     shakingPot.SetActive(false);
         // }
+
+        if (canMix == true)
+        {
+            mixPrompt.SetActive(true);
+        }
+        else mixPrompt.SetActive(false);
 
         if (Input.GetKey(KeyCode.P) && canMix)
         {
