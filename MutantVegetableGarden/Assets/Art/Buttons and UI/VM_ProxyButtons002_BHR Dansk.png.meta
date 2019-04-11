@@ -1,0 +1,625 @@
+fileFormatVersion: 2
+guid: f33c70e8a56838a42bc060fb71826360
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: VM_ProxyButtons002_BHR Dansk_0
+    21300002: VM_ProxyButtons002_BHR Dansk_1
+    21300004: VM_ProxyButtons002_BHR Dansk_2
+    21300006: VM_ProxyButtons002_BHR Dansk_3
+    21300008: VM_ProxyButtons002_BHR Dansk_4
+    21300010: VM_ProxyButtons002_BHR Dansk_5
+    21300012: VM_ProxyButtons002_BHR Dansk_6
+    21300014: VM_ProxyButtons002_BHR Dansk_7
+    21300016: VM_ProxyButtons002_BHR Dansk_8
+    21300018: VM_ProxyButtons002_BHR Dansk_9
+    21300020: VM_ProxyButtons002_BHR Dansk_10
+    21300022: VM_ProxyButtons002_BHR Dansk_11
+    21300024: VM_ProxyButtons002_BHR Dansk_12
+    21300026: VM_ProxyButtons002_BHR Dansk_13
+    21300028: VM_ProxyButtons002_BHR Dansk_14
+    21300030: VM_ProxyButtons002_BHR Dansk_15
+    21300032: VM_ProxyButtons002_BHR Dansk_16
+    21300034: VM_ProxyButtons002_BHR Dansk_17
+    21300036: VM_ProxyButtons002_BHR Dansk_18
+    21300038: VM_ProxyButtons002_BHR Dansk_19
+    21300040: VM_ProxyButtons002_BHR Dansk_20
+    21300042: VM_ProxyButtons002_BHR Dansk_21
+    21300044: VM_ProxyButtons002_BHR Dansk_22
+    21300046: VM_ProxyButtons002_BHR Dansk_23
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_0
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 2545
+        width: 155
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725c14e011f908d4db1b6dc2f09189fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_1
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 2373
+        width: 367
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4df4cc94761cd4aaeca0214bc9060b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_2
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 2380
+        width: 353
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b8415e9d9c2d547b32236dcdc5f2ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2266
+        width: 775
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8a27bb13fa4d748b8d123d7b0a1da9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_4
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1922
+        width: 391
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfb07c121c94454db35e041a3d9e714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_5
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 1928
+        width: 389
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c15381c90114e04f8fd2ac3d751fa8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 2042
+        width: 788
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee835f09c0076474ca1437b3884a61f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1814
+        width: 780
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf115b4eb6542c841b18b0348c0e5517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_8
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1490
+        width: 355
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239fd30e396e26d40ae455ac2281c20b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_9
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1505
+        width: 351
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813d6ef96f251994383580b973d4e170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1426
+        width: 486
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc4a619afd5f0440a02b6bac81e1500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1015
+        width: 335
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc1b35fb39f2b64e8cf93959f1cc4ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_12
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 972
+        width: 1117
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83648e91da6a89b4ca0485dd5be2fb59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_13
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 903
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487dbdc06961fdc45a0e2535388c6f28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_14
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 640
+        width: 576
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5e96dcce53066439570ca44f800cac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_15
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 642
+        width: 599
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df3bfca93744c644b133de77b4fe8d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_16
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 642
+        width: 523
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dca577aa2088c142a79b2a4455b2011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_17
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 880
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bef0fa46d4bd94592abfc56869a52a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 466
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df5d37b708dabe4caace0b6a5602f58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_19
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 544
+        width: 201
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54c48944bd8e144d8dfc891e989f43e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_20
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 492
+        width: 136
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bed8e8932e29e40bb3c9f9d5c8cadd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_21
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 20
+        width: 118
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d566a96a849ef274ea8a85d9461795d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_22
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 16
+        width: 212
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779eab0ab90a7014387955b56cdcd47e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_ProxyButtons002_BHR Dansk_23
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 16
+        width: 140
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f215f119ce3d1db429a5294894ba7ac5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b124c57ee4796d146bd3fa84c1e9f05d
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
