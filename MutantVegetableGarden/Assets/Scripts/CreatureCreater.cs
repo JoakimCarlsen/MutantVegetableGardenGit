@@ -19,6 +19,14 @@ public class CreatureCreater : MonoBehaviour
     public GameObject[] plantSkeleton;
     public GameObject garden;
 
+    float xValue ;
+    float zValue;
+
+    public void Start()
+    {
+        xValue = Random.Range(-52, 14);
+        zValue = Random.Range(-23, 12);
+    }
 
     public void AddToPot(string obj)
     {
@@ -37,7 +45,9 @@ public class CreatureCreater : MonoBehaviour
             if (ObjInPot[0].Contains(possibleIngredients[i]))
             {
                 // if you find a way to randomise position of the spawn of creatures, change garden.transform.position.x (and .z), to what ever x and z position the random should use
-                GameObject newSkeleton = Instantiate(plantSkeleton[i], new Vector3(garden.transform.position.x, garden.transform.position.y + 5.66f, garden.transform.position.z), Quaternion.identity);
+                //The following line was the original. The new one can spawn the creature in a "random" position. But the randome location only happens once; after the first creature is spawned, the position won't change.
+                //GameObject newSkeleton = Instantiate(plantSkeleton[i], new Vector3(garden.transform.position.x, garden.transform.position.y + 5.66f, garden.transform.position.z), Quaternion.identity);
+                GameObject newSkeleton = Instantiate(plantSkeleton[i], new Vector3(xValue, garden.transform.position.y + 5.66f, zValue), Quaternion.identity);
                 newSkeleton.transform.parent = garden.transform;
 
                 foreach (Transform child in newSkeleton.transform)
