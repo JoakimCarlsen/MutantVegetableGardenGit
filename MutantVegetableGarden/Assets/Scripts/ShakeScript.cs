@@ -36,38 +36,38 @@ public class ShakeScript : MonoBehaviour
 
     void Update()
     {
-        // Vector3 acceleration = Input.acceleration;
-        // lowPassValue = Vector3.Lerp(lowPassValue, acceleration, lowPassFilterFactor);
-        // Vector3 deltaAcceleration = acceleration - lowPassValue;
+        Vector3 acceleration = Input.acceleration;
+        lowPassValue = Vector3.Lerp(lowPassValue, acceleration, lowPassFilterFactor);
+        Vector3 deltaAcceleration = acceleration - lowPassValue;
 
-        // if (deltaAcceleration.sqrMagnitude >= shakeDetectionThreshold)
-        // {
-        //     // Perform your "shaking actions" here. If necessary, add suitable
-        //     // guards in the if check above to avoid redundant handling during
-        //     // the same shake (e.g. a minimum refractory period).
-        //     Debug.Log("Shake event detected at time " + Time.time);
-        //     //timer();
-        //     isShaking = true;
-        //     buffer = 0.4f;
-        // }
-        // else if (buffer < 0)
-        // {
-        //     isShaking = false;
-        //     buffer = 0.5f;
-        // }
+        if (deltaAcceleration.sqrMagnitude >= shakeDetectionThreshold)
+        {
+            // Perform your "shaking actions" here. If necessary, add suitable
+            // guards in the if check above to avoid redundant handling during
+            // the same shake (e.g. a minimum refractory period).
+            Debug.Log("Shake event detected at time " + Time.time);
+            //timer();
+            isShaking = true;
+            buffer = 0.4f;
+        }
+        else if (buffer < 0)
+        {
+            isShaking = false;
+            buffer = 0.5f;
+        }
 
-        // if (buffer < 0.5f)
-        //     buffer -= Time.deltaTime;
+        if (buffer < 0.5f)
+            buffer -= Time.deltaTime;
 
-        // if (isShaking && canMix)
-        // {
-        //     timer();
-        // }
-        // else if (timeLeft < 3f && !isShaking)
-        // {
-        //     timeLeft = 3f;
-        //     shakingPot.SetActive(false);
-        // }
+        if (isShaking && canMix)
+        {
+            timer();
+        }
+        else if (timeLeft < 3f && !isShaking)
+        {
+            timeLeft = 3f;
+            shakingPot.SetActive(false);
+        }
 
         if (canMix == true)
         {
@@ -75,15 +75,15 @@ public class ShakeScript : MonoBehaviour
         }
         else mixPrompt.SetActive(false);
 
-        if (Input.GetKey(KeyCode.P) && canMix)
-        {
-            timer();
-        }
-        else if (timeLeft < 3f)
-        {
-            timeLeft = 3f;
-            shakingPot.SetActive(false);
-        }
+        // if (Input.GetKey(KeyCode.P) && canMix)
+        // {
+        //     timer();
+        // }
+        // else if (timeLeft < 3f)
+        // {
+        //     timeLeft = 3f;
+        //     shakingPot.SetActive(false);
+        // }
     }
 
     void timer()

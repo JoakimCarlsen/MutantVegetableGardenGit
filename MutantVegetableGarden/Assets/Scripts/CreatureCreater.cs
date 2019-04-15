@@ -14,7 +14,7 @@ public class CreatureCreater : MonoBehaviour
     public string[] possibleIngredients;
 
     public List<string> ObjInPot = new List<string>();
-    private List<GameObject> bodyPart = new List<GameObject>();
+    public List<GameObject> bodyPart = new List<GameObject>();
 
     public GameObject[] plantSkeleton;
     public GameObject garden;
@@ -54,7 +54,16 @@ public class CreatureCreater : MonoBehaviour
 
                 foreach (Transform child in newSkeleton.transform)
                 {
-                    bodyPart.Add(child.gameObject);
+                    if (child.transform.childCount == 0)
+                    {
+                        bodyPart.Add(child.gameObject);
+                    }
+                    else
+                    {
+                        bodyPart.Add(child.GetChild(0).transform.gameObject);
+                    }
+                    // if (child.gameObject.GetComponent<SpriteRenderer>() != null)
+                    //     bodyPart.Add(child.gameObject);
                 }
                 bodyPart[0].GetComponent<SpriteRenderer>().sprite = bodies[i];
             }

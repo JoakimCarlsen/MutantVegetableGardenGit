@@ -12,6 +12,7 @@ public class Plant_AI : MonoBehaviour
     Vector3 target;
     bool validPath;
     bool runOnce;
+    Animator m_Animator;
 
     public enum State
     {
@@ -27,6 +28,7 @@ public class Plant_AI : MonoBehaviour
         path = new NavMeshPath();
         _state = State.Moving;
         GetNewPath();
+        m_Animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -105,6 +107,8 @@ public class Plant_AI : MonoBehaviour
         runOnce = true;
         float tempTime = Random.Range(2f, 10f);
         yield return new WaitForSeconds(tempTime);
+        m_Animator.ResetTrigger("Change");
+        m_Animator.SetTrigger("Change");
         _state = _newState;
         runOnce = false;
     }
