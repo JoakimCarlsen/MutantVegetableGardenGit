@@ -15,6 +15,7 @@ public class ChangeCameras : MonoBehaviour
     private Button gardenBut;
     private Button mixingBut;
     public GameObject mixingPanel;
+    public GameObject binocularsUI;
 
     //public Color arOnColor;
     //public Color arOffColor;
@@ -42,7 +43,7 @@ public class ChangeCameras : MonoBehaviour
             gardenBut.interactable = true;
             mixingBut.interactable = true;
             // Garden UI in next line;
-            //mixingPanel.SetActive(false);
+            binocularsUI.SetActive(true);
         }
         else
         {
@@ -55,6 +56,7 @@ public class ChangeCameras : MonoBehaviour
             arBut.interactable = true;
             gardenBut.interactable = false;
             mixingBut.interactable = true;
+            binocularsUI.SetActive(false);
             // Garden UI in next line;
             //mixingPanel.SetActive(false);
         }
@@ -70,6 +72,7 @@ public class ChangeCameras : MonoBehaviour
         arBut.interactable = false;
         gardenBut.interactable = true;
         mixingBut.interactable = true;
+        binocularsUI.SetActive(true);
         //mixingPanel.SetActive(false);
     }
 
@@ -82,6 +85,7 @@ public class ChangeCameras : MonoBehaviour
         arBut.interactable = true;
         gardenBut.interactable = false;
         mixingBut.interactable = true;
+        binocularsUI.SetActive(false);
         //mixingPanel.SetActive(false);
     }
 
@@ -94,6 +98,7 @@ public class ChangeCameras : MonoBehaviour
         arBut.interactable = true;
         gardenBut.interactable = true;
         mixingBut.interactable = false;
+        binocularsUI.SetActive(false);
         // Mixing UI in next line;
         //mixingPanel.SetActive(true);
     }
