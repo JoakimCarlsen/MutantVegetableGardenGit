@@ -6,6 +6,8 @@ public class PlayLeaves : MonoBehaviour
 {
     public Camera cam;
 
+    public string particleSource;
+
     public ParticleSystem leavesParticles;
 
     // Start is called before the first frame update
@@ -39,7 +41,9 @@ public class PlayLeaves : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    if (hit.collider.tag == "LeafPuffer")
+
+                //if (hit.collider.tag == "LeafPuffer")
+                if (hit.collider.name == particleSource)
                     {
                     LeavesBurster();
                     }
