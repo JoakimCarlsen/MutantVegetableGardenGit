@@ -16,6 +16,8 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public Text[] inventoryTexts;
 
+    public GameObject[] currentIngredients;
+
     public enum ingredientPossibilities { type1, type2, type3, type4, type5, type6 }
     public ingredientPossibilities thisObject;
 
@@ -44,31 +46,121 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
             {
                 inventory.GetComponent<Inventory>().item1 -= 1;
                 inventoryTexts[0].text = "" + inventory.GetComponent<Inventory>().item1;
+                if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 1)
+                {
+                    currentIngredients[0].GetComponent<Image>().enabled = true;
+                    currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
+                {
+                    currentIngredients[1].GetComponent<Image>().enabled = true;
+                    currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
+                {
+                    currentIngredients[2].GetComponent<Image>().enabled = true;
+                    currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
             }
             else if (thisObject == ingredientPossibilities.type2)
             {
                 inventory.GetComponent<Inventory>().item2 -= 1;
                 inventoryTexts[1].text = "" + inventory.GetComponent<Inventory>().item2;
+                if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 1)
+                {
+                    currentIngredients[0].GetComponent<Image>().enabled = true;
+                    currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
+                {
+                    currentIngredients[1].GetComponent<Image>().enabled = true;
+                    currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
+                {
+                    currentIngredients[2].GetComponent<Image>().enabled = true;
+                    currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
             }
             else if (thisObject == ingredientPossibilities.type3)
             {
                 inventory.GetComponent<Inventory>().item3 -= 1;
                 inventoryTexts[2].text = "" + inventory.GetComponent<Inventory>().item3;
+                if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 1)
+                {
+                    currentIngredients[0].GetComponent<Image>().enabled = true;
+                    currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
+                {
+                    currentIngredients[1].GetComponent<Image>().enabled = true;
+                    currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
+                {
+                    currentIngredients[2].GetComponent<Image>().enabled = true;
+                    currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
             }
             else if (thisObject == ingredientPossibilities.type4)
             {
                 inventory.GetComponent<Inventory>().item4 -= 1;
                 inventoryTexts[3].text = "" + inventory.GetComponent<Inventory>().item4;
+                if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 1)
+                {
+                    currentIngredients[0].GetComponent<Image>().enabled = true;
+                    currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
+                {
+                    currentIngredients[1].GetComponent<Image>().enabled = true;
+                    currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
+                {
+                    currentIngredients[2].GetComponent<Image>().enabled = true;
+                    currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
             }
             else if (thisObject == ingredientPossibilities.type5)
             {
                 inventory.GetComponent<Inventory>().item5 -= 1;
                 inventoryTexts[4].text = "" + inventory.GetComponent<Inventory>().item5;
+                if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 1)
+                {
+                    currentIngredients[0].GetComponent<Image>().enabled = true;
+                    currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
+                {
+                    currentIngredients[1].GetComponent<Image>().enabled = true;
+                    currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
+                {
+                    currentIngredients[2].GetComponent<Image>().enabled = true;
+                    currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
             }
             else if (thisObject == ingredientPossibilities.type6)
             {
                 inventory.GetComponent<Inventory>().item6 -= 1;
                 inventoryTexts[5].text = "" + inventory.GetComponent<Inventory>().item6;
+                if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 1)
+                {
+                    currentIngredients[0].GetComponent<Image>().enabled = true;
+                    currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
+                {
+                    currentIngredients[1].GetComponent<Image>().enabled = true;
+                    currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
+                else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
+                {
+                    currentIngredients[2].GetComponent<Image>().enabled = true;
+                    currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                }
             }
         }
         else transform.localPosition = Vector3.zero;

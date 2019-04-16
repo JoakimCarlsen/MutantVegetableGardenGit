@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CreatureCreater : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class CreatureCreater : MonoBehaviour
 
     float xValue;
     float zValue;
+
+    public GameObject[] currentIngredient;
 
     public void Start()
     {
@@ -97,5 +100,10 @@ public class CreatureCreater : MonoBehaviour
 
         // Empties the list, for new creatures to be added
         ObjInPot.Clear();
+
+        for (int i = 0; i < 3; i++)
+        {
+            currentIngredient[i].GetComponent<Image>().enabled = false;
+        }
     }
 }
