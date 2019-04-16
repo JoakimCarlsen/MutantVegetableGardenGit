@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -806,6 +806,14 @@ MonoBehaviour:
   potPanel: {fileID: 395846723}
   itemDescription: greyDirt
   MixingBenchGO: {fileID: 0}
+  inventoryTexts:
+  - {fileID: 1299786510}
+  - {fileID: 2092466568}
+  - {fileID: 1930989777}
+  - {fileID: 2067905732}
+  - {fileID: 807444126}
+  - {fileID: 719698036}
+  thisObject: 3
 --- !u!1 &69461936
 GameObject:
   m_ObjectHideFlags: 0
@@ -6718,7 +6726,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '0
+  m_Text: '2
 
 '
 --- !u!222 &719698037
@@ -7366,7 +7374,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '0
+  m_Text: '2
 
 '
 --- !u!222 &807444127
@@ -7768,12 +7776,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090612ea18bba454bb8193919ec0f9ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item1: 0
-  item2: 0
-  item3: 0
-  item4: 0
-  item5: 0
-  item6: 0
+  item1: 2
+  item2: 2
+  item3: 2
+  item4: 2
+  item5: 2
+  item6: 2
 --- !u!1 &839503410
 GameObject:
   m_ObjectHideFlags: 0
@@ -9943,6 +9951,14 @@ MonoBehaviour:
   potPanel: {fileID: 395846723}
   itemDescription: popSeed
   MixingBenchGO: {fileID: 0}
+  inventoryTexts:
+  - {fileID: 1299786510}
+  - {fileID: 2092466568}
+  - {fileID: 1930989777}
+  - {fileID: 2067905732}
+  - {fileID: 807444126}
+  - {fileID: 719698036}
+  thisObject: 0
 --- !u!114 &1196391671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10992,7 +11008,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: '2
+
+'
 --- !u!222 &1299786511
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12534,6 +12552,14 @@ MonoBehaviour:
   potPanel: {fileID: 395846723}
   itemDescription: rainWater
   MixingBenchGO: {fileID: 0}
+  inventoryTexts:
+  - {fileID: 1299786510}
+  - {fileID: 2092466568}
+  - {fileID: 1930989777}
+  - {fileID: 2067905732}
+  - {fileID: 807444126}
+  - {fileID: 719698036}
+  thisObject: 4
 --- !u!1001 &1503214745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12786,6 +12812,14 @@ MonoBehaviour:
   potPanel: {fileID: 395846723}
   itemDescription: cactiSeed
   MixingBenchGO: {fileID: 0}
+  inventoryTexts:
+  - {fileID: 1299786510}
+  - {fileID: 2092466568}
+  - {fileID: 1930989777}
+  - {fileID: 2067905732}
+  - {fileID: 807444126}
+  - {fileID: 719698036}
+  thisObject: 1
 --- !u!1 &1548248131
 GameObject:
   m_ObjectHideFlags: 0
@@ -13715,6 +13749,14 @@ MonoBehaviour:
   potPanel: {fileID: 395846723}
   itemDescription: sunMulch
   MixingBenchGO: {fileID: 0}
+  inventoryTexts:
+  - {fileID: 1299786510}
+  - {fileID: 2092466568}
+  - {fileID: 1930989777}
+  - {fileID: 2067905732}
+  - {fileID: 807444126}
+  - {fileID: 719698036}
+  thisObject: 2
 --- !u!1001 &1647817626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14124,6 +14166,14 @@ MonoBehaviour:
   potPanel: {fileID: 395846723}
   itemDescription: dewDrops
   MixingBenchGO: {fileID: 0}
+  inventoryTexts:
+  - {fileID: 1299786510}
+  - {fileID: 2092466568}
+  - {fileID: 1930989777}
+  - {fileID: 2067905732}
+  - {fileID: 807444126}
+  - {fileID: 719698036}
+  thisObject: 5
 --- !u!1001 &1677260004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16576,7 +16626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '0
+  m_Text: '2
 
 '
 --- !u!222 &1930989778
@@ -17129,7 +17179,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '0
+  m_Text: '2
 
 '
 --- !u!222 &2067905733
@@ -17457,7 +17507,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '0
+  m_Text: '2
 
 '
 --- !u!222 &2092466569

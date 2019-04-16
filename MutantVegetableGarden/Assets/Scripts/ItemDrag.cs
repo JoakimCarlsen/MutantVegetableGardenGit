@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
 {
@@ -12,6 +13,11 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
     public GameObject MixingBenchGO;
 
     private GameObject inventory;
+
+    public Text[] inventoryTexts;
+
+    public enum ingredientPossibilities { type1, type2, type3, type4, type5, type6 }
+    public ingredientPossibilities thisObject;
 
     void Start()
     {
@@ -34,7 +40,36 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
             Debug.Log("Dropped item");
             transform.localPosition = Vector3.zero;
             MixingBenchGO.GetComponent<CreatureCreater>().AddToPot(itemDescription);
-            // subtract 1 from inventory.GetComponent<Inventory>().nameofthewvariableyouwanttoremovefrom
+            if (thisObject == ingredientPossibilities.type1)
+            {
+                inventory.GetComponent<Inventory>().item1 -= 1;
+                inventoryTexts[0].text = "" + inventory.GetComponent<Inventory>().item1;
+            }
+            else if (thisObject == ingredientPossibilities.type2)
+            {
+                inventory.GetComponent<Inventory>().item2 -= 1;
+                inventoryTexts[1].text = "" + inventory.GetComponent<Inventory>().item2;
+            }
+            else if (thisObject == ingredientPossibilities.type3)
+            {
+                inventory.GetComponent<Inventory>().item3 -= 1;
+                inventoryTexts[2].text = "" + inventory.GetComponent<Inventory>().item3;
+            }
+            else if (thisObject == ingredientPossibilities.type4)
+            {
+                inventory.GetComponent<Inventory>().item4 -= 1;
+                inventoryTexts[3].text = "" + inventory.GetComponent<Inventory>().item4;
+            }
+            else if (thisObject == ingredientPossibilities.type5)
+            {
+                inventory.GetComponent<Inventory>().item5 -= 1;
+                inventoryTexts[4].text = "" + inventory.GetComponent<Inventory>().item5;
+            }
+            else if (thisObject == ingredientPossibilities.type6)
+            {
+                inventory.GetComponent<Inventory>().item6 -= 1;
+                inventoryTexts[5].text = "" + inventory.GetComponent<Inventory>().item6;
+            }
         }
         else transform.localPosition = Vector3.zero;
     }
