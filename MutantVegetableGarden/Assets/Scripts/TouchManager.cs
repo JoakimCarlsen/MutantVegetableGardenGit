@@ -31,21 +31,23 @@ public class TouchManager : MonoBehaviour
 
         if (Physics.Raycast(mousePosN, mousePosF - mousePosN, out hit))
         {
-            Pickup(hit.transform.gameObject.GetComponent<IngredientType>().type);
-            manager.GetComponent<ingredientCountdown>().StartCountdown(hit.transform.gameObject);
+            //Pickup(hit.transform.gameObject.GetComponent<IngredientType>().type);
+            //manager.GetComponent<ingredientCountdown>().StartCountdown(hit.transform.gameObject);
 
             // Add countdown feedback for the ingredients
 
-            if (rOrB == 0)
-            {
-                hit.transform.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
-                rOrB = 1;
-            }
-            else if (rOrB == 1)
-            {
-                hit.transform.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
-                rOrB = 0;
-            }
+            hit.transform.gameObject.GetComponent<destroyBox>().BreakBox();
+
+            // if (rOrB == 0)
+            // {
+            //     hit.transform.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+            //     rOrB = 1;
+            // }
+            // else if (rOrB == 1)
+            // {
+            //     hit.transform.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
+            //     rOrB = 0;
+            // }
         }
     }
 
