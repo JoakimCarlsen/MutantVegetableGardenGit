@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7828387626136700725}
   - component: {fileID: 7828387626135602677}
   - component: {fileID: 2950298340049512213}
-  - component: {fileID: 7817318098873234356}
+  - component: {fileID: 346652530713662157}
   m_Layer: 0
   m_Name: Wooden_Crate
   m_TagString: Untagged
@@ -92,17 +92,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 121.772705, y: 102.35167, z: 101.00458}
   m_Center: {x: 0.09588623, y: 51.056816, z: -0.0934124}
---- !u!114 &7817318098873234356
-MonoBehaviour:
+--- !u!95 &346652530713662157
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7828387626133674805}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5cb59d5bb6f740759b16c4cb031e4ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyedVersion: {fileID: 585140735067962450, guid: d6629f175abd148b09c6c504f20fe47d,
-    type: 3}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e78d8f1c3d2a542e9a301ccc8c4c050a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

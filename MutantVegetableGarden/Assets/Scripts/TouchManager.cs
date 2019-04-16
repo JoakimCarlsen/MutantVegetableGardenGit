@@ -31,12 +31,11 @@ public class TouchManager : MonoBehaviour
 
         if (Physics.Raycast(mousePosN, mousePosF - mousePosN, out hit))
         {
-            //Pickup(hit.transform.gameObject.GetComponent<IngredientType>().type);
-            //manager.GetComponent<ingredientCountdown>().StartCountdown(hit.transform.gameObject);
 
             // Add countdown feedback for the ingredients
-
-            hit.transform.gameObject.GetComponent<destroyBox>().BreakBox();
+            hit.transform.gameObject.GetComponent<Animator>().SetTrigger("Squish");
+            Pickup(hit.transform.gameObject.GetComponent<IngredientType>().type);
+            manager.GetComponent<ingredientCountdown>().StartCountdown(hit.transform.gameObject);
 
             // if (rOrB == 0)
             // {

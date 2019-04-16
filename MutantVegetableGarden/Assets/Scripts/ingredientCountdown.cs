@@ -16,10 +16,10 @@ public class ingredientCountdown : MonoBehaviour
 
     IEnumerator LateCall(GameObject obj)
     {
-        obj.GetComponent<MeshCollider>().enabled = false;
+        obj.GetComponent<BoxCollider>().enabled = false;
 
         yield return new WaitForSeconds(sec);
 
-        obj.GetComponent<MeshCollider>().enabled = true;
+        obj.GetComponent<BoxCollider>().enabled = true;
     }
 }
