@@ -10,6 +10,8 @@ public class PlayLeaves : MonoBehaviour
 
     public ParticleSystem leavesParticles;
 
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,11 +64,13 @@ public class PlayLeaves : MonoBehaviour
         if (leavesParticles.isPlaying)
         {
             leavesParticles.Stop();
+            audioSource.Play();
         }
 
         else
         {
             leavesParticles.Play();
+            audioSource.Play();
         }
 
     }
