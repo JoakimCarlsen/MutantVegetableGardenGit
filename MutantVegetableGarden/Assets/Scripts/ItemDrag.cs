@@ -21,6 +21,11 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
     public enum ingredientPossibilities { type1, type2, type3, type4, type5, type6 }
     public ingredientPossibilities thisObject;
 
+    public AudioSource ing01Sound;
+    public AudioSource ing02Sound;
+    public AudioSource ing03Sound;
+
+
     void Start()
     {
         MixingBenchGO = GameObject.Find("MixingBench");
@@ -50,16 +55,22 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
                 {
                     currentIngredients[0].GetComponent<Image>().enabled = true;
                     currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing01Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
                 {
                     currentIngredients[1].GetComponent<Image>().enabled = true;
                     currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing02Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
                 {
                     currentIngredients[2].GetComponent<Image>().enabled = true;
                     currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing03Sound.Play();
+
                 }
             }
             else if (thisObject == ingredientPossibilities.type2)
@@ -70,16 +81,22 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
                 {
                     currentIngredients[0].GetComponent<Image>().enabled = true;
                     currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing01Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
                 {
                     currentIngredients[1].GetComponent<Image>().enabled = true;
                     currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing02Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
                 {
                     currentIngredients[2].GetComponent<Image>().enabled = true;
                     currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing03Sound.Play();
+
                 }
             }
             else if (thisObject == ingredientPossibilities.type3)
@@ -90,16 +107,22 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
                 {
                     currentIngredients[0].GetComponent<Image>().enabled = true;
                     currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing01Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
                 {
                     currentIngredients[1].GetComponent<Image>().enabled = true;
                     currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing02Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
                 {
                     currentIngredients[2].GetComponent<Image>().enabled = true;
                     currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing03Sound.Play();
+
                 }
             }
             else if (thisObject == ingredientPossibilities.type4)
@@ -110,16 +133,22 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
                 {
                     currentIngredients[0].GetComponent<Image>().enabled = true;
                     currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing01Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
                 {
                     currentIngredients[1].GetComponent<Image>().enabled = true;
                     currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing02Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
                 {
                     currentIngredients[2].GetComponent<Image>().enabled = true;
                     currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing03Sound.Play();
+
                 }
             }
             else if (thisObject == ingredientPossibilities.type5)
@@ -130,16 +159,22 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
                 {
                     currentIngredients[0].GetComponent<Image>().enabled = true;
                     currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing01Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
                 {
                     currentIngredients[1].GetComponent<Image>().enabled = true;
                     currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing02Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
                 {
                     currentIngredients[2].GetComponent<Image>().enabled = true;
                     currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing03Sound.Play();
+
                 }
             }
             else if (thisObject == ingredientPossibilities.type6)
@@ -150,16 +185,22 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler
                 {
                     currentIngredients[0].GetComponent<Image>().enabled = true;
                     currentIngredients[0].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing01Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 2)
                 {
                     currentIngredients[1].GetComponent<Image>().enabled = true;
                     currentIngredients[1].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing02Sound.Play();
+
                 }
                 else if (MixingBenchGO.GetComponent<CreatureCreater>().ObjInPot.Count == 3)
                 {
                     currentIngredients[2].GetComponent<Image>().enabled = true;
                     currentIngredients[2].GetComponent<Image>().sprite = this.GetComponent<Image>().sprite;
+                    ing03Sound.Play();
+
                 }
             }
         }

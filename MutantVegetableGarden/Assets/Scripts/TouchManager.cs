@@ -9,6 +9,7 @@ public class TouchManager : MonoBehaviour
     private int rOrB = 0;
     private GameObject manager;
     public Text[] inventoryTexts;
+    public AudioSource gotIngredSfx;
 
 
     // Start is called before the first frame update
@@ -56,31 +57,42 @@ public class TouchManager : MonoBehaviour
         {
             manager.GetComponent<Inventory>().item1 += 1;
             inventoryTexts[0].text = "" + manager.GetComponent<Inventory>().item1;
+            gotIngredSfx.Play();
         }
         else if (type == "type2")
         {
             manager.GetComponent<Inventory>().item2 += 1;
             inventoryTexts[1].text = "" + manager.GetComponent<Inventory>().item2;
+            gotIngredSfx.Play();
+
         }
         else if (type == "type3")
         {
             manager.GetComponent<Inventory>().item3 += 1;
             inventoryTexts[2].text = "" + manager.GetComponent<Inventory>().item3;
+            gotIngredSfx.Play();
+
         }
         else if (type == "type4")
         {
             manager.GetComponent<Inventory>().item4 += 1;
             inventoryTexts[3].text = "" + manager.GetComponent<Inventory>().item4;
+            gotIngredSfx.Play();
+
         }
         else if (type == "type5")
         {
             manager.GetComponent<Inventory>().item5 += 1;
             inventoryTexts[4].text = "" + manager.GetComponent<Inventory>().item5;
+            gotIngredSfx.Play();
+
         }
         else if (type == "type6")
         {
             manager.GetComponent<Inventory>().item6 += 1;
             inventoryTexts[5].text = "" + manager.GetComponent<Inventory>().item6;
+            gotIngredSfx.Play();
+
         }
     }
 }

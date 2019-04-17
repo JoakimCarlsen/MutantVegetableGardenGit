@@ -11,6 +11,8 @@ public class ShakeScript : MonoBehaviour
     public GameObject creatureCreate;
     public GameObject mixPrompt;
 
+    public AudioSource creatureSound;
+
     float accelerometerUpdateInterval = 1.0f / 60.0f;
     // The greater the value of LowPassKernelWidthInSeconds, the slower the
     // filtered value will converge towards current input sample (and vice versa).
@@ -96,6 +98,7 @@ public class ShakeScript : MonoBehaviour
             // GameObject newPlant = Instantiate(plant, new Vector3(garden.transform.position.x, garden.transform.position.y, garden.transform.position.z), Quaternion.identity);
             // newPlant.transform.parent = garden.transform; 
             canMix = false;
+            creatureSound.Play();
         }
     }
 }
