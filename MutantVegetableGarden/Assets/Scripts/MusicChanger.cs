@@ -12,6 +12,7 @@ public class MusicChanger : MonoBehaviour
     public float introVar = 0f;
     public float gardenVar = 0f;
 
+    public AudioSource speechBubbleSound;
 
     // Use this for initialization
     public void TransitionMusic()
@@ -87,5 +88,10 @@ public class MusicChanger : MonoBehaviour
         //gardenTrack.volume += gardenVar;
         //yield return new WaitForSeconds(sec);
         //gardenTrack.volume += gardenVar;
+    }
+
+    public void speechPoppingUp()
+    {
+        speechBubbleSound.Play();
     }
 }
