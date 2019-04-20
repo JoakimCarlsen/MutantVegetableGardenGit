@@ -13,6 +13,12 @@ public class AnimateManager : MonoBehaviour
 
     public GameObject speechSprite;
     public Animator speechPopUp;
+    public int speechCounter = 0;
+    public GameObject speech01;
+    public GameObject speech02;
+    public GameObject speech03;
+    public GameObject speech04;
+
 
     public GameObject bigbeeSprite;
     public Animator bigbeeAnimator;
@@ -44,7 +50,7 @@ public class AnimateManager : MonoBehaviour
             introCanvas.SetActive(false);
         }
        
-        else if(madelaineCounter == 1)
+        else if(madelaineCounter == 4)
         {
             yield return new WaitForSeconds(madelaineOutTimer);
             madelaineCanvas.SetActive(false);
@@ -74,9 +80,33 @@ public class AnimateManager : MonoBehaviour
 
     public void MadelaineOut()
     {
-        madelaineParent.Play("M_Exit");
-        madelaineCounter = 1;
-        StartCoroutine(LateCall());
+        madelaineCounter++;
+        
+        if (madelaineCounter == 1)
+        {
+            speech01.SetActive(false);
+            speech02.SetActive(true);
+        }
+
+        else if (madelaineCounter == 2)
+        {
+            speech02.SetActive(false);
+            speech03.SetActive(true);
+        }
+
+        else if (madelaineCounter == 3)
+        {
+            speech03.SetActive(false);
+            speech04.SetActive(true);
+        }
+
+        else if(madelaineCounter == 4)
+        {
+            SpeechOut();
+            madelaineParent.Play("M_Exit");
+            StartCoroutine(LateCall());
+
+        }
 
     }
 
